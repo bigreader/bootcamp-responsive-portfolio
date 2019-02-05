@@ -1,0 +1,209 @@
+html {
+	background: white url("../images/topography.png");
+
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, #name {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+	color: #4aaaa5;
+}
+
+a {
+	text-decoration: none;
+	color: #4aaaa5;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bounded {
+	max-width: 960px;
+	width: 90%;
+	min-width: 280px;
+	margin: 0 auto;
+}
+
+
+header {
+	height: 80px;
+
+	background: white;
+	border-bottom: 2px solid #cccccc;
+}
+
+header #name {
+	float: left;
+
+	padding: 0 20px;
+
+	font-size: 24px;
+	line-height: 80px;
+
+	background: #4aaaa5;
+	color: white;
+}
+
+nav {
+	float: right;
+	padding: 32px 0;
+
+	font-size: 16px;
+	line-height: 16px;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+
+	margin: 0;
+	padding: 0 20px 0 14px;
+	
+	border-right: solid #dddddd 1px;
+}
+
+nav li:last-child {
+	padding-right: 0;
+
+	border-right: none;
+}
+
+nav a {
+	color: #aaaaaa;
+}
+
+nav a:hover {
+	color: #4aaaa5;
+}
+
+
+article {
+	box-sizing: border-box;
+	margin: 20px;
+	padding: 20px;
+
+	background: #ffffff;
+	border: 1px solid #dddddd;
+}
+
+article.bounded {
+	margin: 20px auto;
+}
+
+article p {
+	line-height: 1.5em;
+}
+
+h1 {
+	margin: 0 0 20px 0;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #dddddd;
+
+	font-size: 24px;
+}
+
+img.inline-left {
+	float: left;
+
+	margin: 0 20px 20px 0;
+}
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery .item {
+	flex: 0 0 auto;
+	position: relative;
+	height: 240px;
+	width: 320px;
+	margin: 10px;
+}
+
+.gallery .item a {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 320px;
+	padding: 10px;
+
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 18px;
+	text-align: center;
+	background: #4aaaa5;
+	color: #ffffff;
+}
+
+
+form label {
+	display: block;
+	margin: 20px 0 4px 0;
+}
+
+form input[type="text"],
+form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 4px;
+	border: 1px solid #cccccc;
+}
+
+form textarea {
+	height: 250px;
+}
+
+button {
+	display: block;
+	margin-top: 20px;
+	padding: 10px 20px;
+
+	font-size: 16px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+	background: #4aaaa5;
+	border: none;
+	color: white;
+}
+
+
+#content {
+	min-height: 100%;
+	margin-bottom: -68px;
+}
+
+#push {
+	height: 68px;
+}
+
+footer {
+	padding-top: 40px;
+	height: 20px;
+
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+
+	color: #cccccc;
+	background: #666666;
+	border-top: 8px solid #4aaaa5;
+}
+
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 1px;
+}
