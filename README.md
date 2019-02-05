@@ -1,4 +1,4 @@
-# Bootcamp Homework #1
-## Basic Portfolio
+# Bootcamp Homework #2
+## Responsive Portfolio: Media Queries
 
-[View live](https://bigreader.github.io/bootcamp-basic-portfolio/) via GitHub Pages
+[View live](https://bigreader.github.io/bootcamp-responsive-portfolio/) via GitHub Pages
