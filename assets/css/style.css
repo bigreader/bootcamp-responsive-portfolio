@@ -24,10 +24,12 @@ body {
 }
 
 .bounded {
-	max-width: 960px;
-	width: 90%;
-	min-width: 280px;
+	width: 960px;
 	margin: 0 auto;
+}
+
+.col-l {
+	width: 640px;
 }
 
 
@@ -88,15 +90,11 @@ nav a:hover {
 
 article {
 	box-sizing: border-box;
-	margin: 20px;
+	margin: 20px 0;
 	padding: 20px;
 
 	background: #ffffff;
 	border: 1px solid #dddddd;
-}
-
-article.bounded {
-	margin: 20px auto;
 }
 
 article p {
@@ -126,9 +124,14 @@ img.inline-left {
 .gallery .item {
 	flex: 0 0 auto;
 	position: relative;
-	height: 240px;
-	width: 320px;
+	height: auto;
+	width: 45%;
 	margin: 10px;
+}
+
+.gallery .item img {
+	width: 100%;
+	height: auto;
 }
 
 .gallery .item a {
@@ -136,7 +139,7 @@ img.inline-left {
 	position: absolute;
 	bottom: 10px;
 	left: 0;
-	width: 320px;
+	width: 100%;
 	padding: 10px;
 
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -206,4 +209,32 @@ footer {
 	display: block;
 	clear: both;
 	height: 1px;
+}
+
+@media (max-width: 980px) {
+
+	.bounded {
+		width: 640px;
+		margin: 0 auto;
+	}
+
+	.col-l {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 640px) {
+
+	.bounded {
+		width: auto;
+		margin: 0 20px;
+	}
+
+	.gallery .item {
+		height: auto;
+		width: 100%;
+		margin: 10px 0;
+	}
+
 }
