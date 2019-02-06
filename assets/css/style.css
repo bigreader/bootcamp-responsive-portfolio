@@ -34,7 +34,7 @@ body {
 
 
 header {
-	height: 80px;
+	min-height: 80px;
 
 	background: white;
 	border-bottom: 2px solid #cccccc;
@@ -225,6 +225,25 @@ footer {
 }
 
 @media (max-width: 640px) {
+
+	header #name {
+		float: none;
+		width: 100%;
+		margin: 0 -20px;
+		line-height: 60px;
+		text-align: center;
+	}
+
+	nav {
+		float: none;
+		width: 100%;
+		padding: 15px 0;
+		text-align: center;
+	}
+
+	nav ul {
+		padding: 0;
+	}
 
 	.bounded {
 		width: auto;
